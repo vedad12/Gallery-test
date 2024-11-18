@@ -1,0 +1,72 @@
+/* Osnovni stilovi za galeriju */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+  }
+  
+  .gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .gallery-item p {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  /* Tablet stilovi */
+  @media screen and (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .gallery-item p {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Mobilni uređaji */
+  @media screen and (max-width: 480px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .gallery-item p {
+      font-size: 0.8em;
+    }
+  }
+  
